@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>커뮤니티 게시판</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header>
+    <h1>커뮤니티 게시판</h1>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>새 글 작성</h2>
+      <form id="postForm">
+        <div class="form-group">
+          <label for="title">제목</label>
+          <input type="text" id="title" required />
+        </div>
+        <div class="form-group">
+          <label for="author">작성자</label>
+          <input type="text" id="author" required />
+        </div>
+        <div class="form-group">
+          <label for="content">내용</label>
+          <textarea id="content" rows="4" required></textarea>
+        </div>
+        <button type="submit">등록</button>
+      </form>
+    </section>
+
+    <section class="list-section">
+      <h2>게시글 목록</h2>
+      <ul id="postList"></ul>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
